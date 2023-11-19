@@ -1,0 +1,33 @@
+.primary {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 3rem;
+  background-color: var(--purple-500);
+  border-radius: var(--border-500);
+  padding: 0.75rem 2rem;
+  transition: 0.35s opacity ease, 0.2s color ease;
+  cursor: pointer;
+  width: max-content;
+
+  a {
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--dark-100);
+    text-decoration: none;
+  }
+  &:active {
+    background-color: var(--purple-600);
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:disabled {
+    opacity: 0.33;
+  }
+}

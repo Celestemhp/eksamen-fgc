@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+
 // @import "normalize";
 @import "variables";
 @import "font";
 // @import "util";
-// @import "block-override";
+@import "block-override";
 
 @import "header";
 @import "footer";
@@ -14,3 +16,36 @@
 // @import "related";
 // @import "404";
 // @import "cards";
+
+html {
+  overflow-x: hidden;
+  background: var(--color-background);
+  font-size: var(--font-size);
+}
+
+.alignwide {
+  width: 100% !important;
+
+  @media (min-width: 768px) {
+    max-width: 95vw !important;
+    width: var(--container-wide) !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+.is-layout-constrained {
+  padding-left: var(--container-padding) !important;
+  padding-right: var(--container-padding) !important;
+
+  // if in alignfull block like group
+  .alignwide {
+    transform: translateX(0) !important;
+  }
+}
+
+.alignfull {
+  margin-left: calc(50% - 50vw) !important;
+  max-width: calc(100vw) !important;
+  width: calc(100vw) !important;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "eksamen-fgc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass scss/input.scss css/output.css --output-style compressed --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Celestemhp/eksamen-fgc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Celestemhp/eksamen-fgc/issues"
+  },
+  "homepage": "https://github.com/Celestemhp/eksamen-fgc#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "description": ""
+}

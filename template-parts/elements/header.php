@@ -29,7 +29,7 @@
         <!-- mobile -->
         <div class="mobile-menu">
             <a href="#" class="top-menu toggle-menu">
-                <img src="images/icon-menu.svg" alt="menu icon" />
+                <?= svg('icon-menu'); ?>
             </a>
         </div>
     </div>

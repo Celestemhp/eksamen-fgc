@@ -1,0 +1,124 @@
+footer {
+  background: var(--purple-900);
+  //   height: 44rem;
+  padding-inline: var(--padding-inline-mobile);
+  padding-block: var(--padding-block-mobile);
+  color: var(--dark-100);
+  z-index: 99;
+  overflow: hidden;
+
+  background-image: url("../images/logo-icon-dark.png");
+  background-position: right 75px center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    // height: 22rem;
+    padding-inline: var(--padding-inline-desktop);
+    padding-block: var(--padding-block-desktop);
+  }
+
+  .footer__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: var(--padding-block-mobile);
+    // padding-block: 3.75rem;
+    gap: 3.75rem;
+
+    // @media (min-width: 768px) {
+    //   padding-block: 4.75rem;
+    // }
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+      justify-content: space-around;
+      padding-block: var(--padding-block-desktop);
+    }
+
+    .footer__logo {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      justify-content: center;
+
+      img {
+        width: var(--logoWidth-md);
+        align-self: center;
+        color: var(--dark-100);
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: var(--dark-100);
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+      }
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4rem;
+      justify-content: space-between;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .footer__nav-container-item {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        max-width: 70%;
+
+        @media (max-width: 768px) {
+          max-width: 100%;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          gap: 1.25rem;
+          min-width: 11.6rem;
+
+          li {
+            font-family: var(--font-heading);
+
+            a {
+              color: var(--dark-100);
+              font-size: 1.5rem;
+              font-weight: 300;
+            }
+          }
+          .contact {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            font-weight: 300;
+            min-width: 11.6rem;
+          }
+          .social-links {
+            display: flex;
+            flex-direction: row;
+            gap: 1.25rem;
+            padding-top: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__folokon {
+    // border-top: 0.3px solid var(--dark-400);
+    color: var(--dark-400);
+
+    h6 {
+      padding-block: 1.1rem;
+      font-weight: 300;
+    }
+  }
+}
