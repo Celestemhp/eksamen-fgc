@@ -3,14 +3,14 @@
 // @import "normalize";
 @import "variables";
 @import "font";
-// @import "util";
+@import "util";
 @import "block-override";
 
 @import "header";
 @import "footer";
 @import "menu";
 
-// @import "buttons";
+@import "buttons";
 // @import "globals";
 // @import "forms";
 // @import "related";
@@ -48,4 +48,26 @@ html {
   margin-left: calc(50% - 50vw) !important;
   max-width: calc(100vw) !important;
   width: calc(100vw) !important;
+}
+
+// our work
+.our-work-container {
+  .our-work--top {
+    position: relative;
+
+    .line-top {
+      background: var(--dark-800);
+      z-index: -1;
+      position: absolute;
+    }
+    h2 {
+      line-height: 8.25rem;
+      text-align: center;
+      text-transform: uppercase;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: var(--color-background);
+      display: inline-flex;
+    }
+  }
 }
